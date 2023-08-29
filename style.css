@@ -7,9 +7,6 @@
 body,
 input {
   font-family: "Poppins", sans-serif;
-}
-
-body {
   background: #efefef;
 }
 
@@ -53,11 +50,11 @@ form {
   border-radius: 20px 20px 0px 0px;
   background: #fff;
   margin-top: 58px;
-  min-height: 100vh;
   padding: 64px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: center;
 }
 
 fieldset {
@@ -65,9 +62,53 @@ fieldset {
 }
 
 .fieldset-wrapper {
+  width: 622px;
   display: flex;
   flex-direction: column;
   gap: 48px;
+}
+
+.fieldset-wrapper-date {
+  width: 622px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.fieldset-wrapper-date legend {
+  margin-bottom: 24px;
+}
+
+fieldset .fieldset-wrapper-date h2 {
+  color: #535971;
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+.col-2 > div:nth-child(1),
+div:nth-child(2) {
+  width: 100%;
+}
+
+.col-3 {
+  display: flex;
+}
+.col-3 > div:nth-child(1) {
+  margin-right: 32px;
+  width: 300px;
+}
+.col-3 > div:nth-child(2) {
+  width: 140px;
+  margin-right: 10px;
+}
+.col-3 > div:nth-child(3) {
+  width: 140px;
 }
 
 fieldset legend {
@@ -78,6 +119,9 @@ fieldset legend {
   color: #535971;
   width: 100%;
   border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 8px;
+}
+.personal {
   padding-bottom: 16px;
 }
 
@@ -92,6 +136,7 @@ fieldset legend {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 8px;
 }
 
 .input-wrapper label span {
@@ -109,4 +154,27 @@ fieldset legend {
   border-radius: 8px;
   height: 56px;
   padding: 0 24px;
+}
+footer {
+  height: 160px;
+  width: 750px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.button {
+  border: 0;
+  width: 608px;
+  height: 55.652px;
+  border-radius: 20px;
+  background: #ff5374;
+  color: #fff;
+}
+
+.button:hover {
+  background: #e9516f;
 }
